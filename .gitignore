@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+build/
+.vite/
+
+# Generated video/output files
+output/
+outputs/
+temp/
+tmp/
+*.mp4
+*.webm
+*.webp
+
+# AI model files
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+
+# ComfyUI
+ComfyUI_windows_portable/
+models/
+ComfyUI/models/
+ComfyUI/output/
+ComfyUI/temp/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# MotionForge generated assets
+backend/generated_videos/
