@@ -54,22 +54,6 @@ type StatusResponse = {
   quality?: Quality;
 };
 
-type ResultResponse = {
-  status?: string;
-  job_id?: string;
-  progress?: number;
-  stage?: string;
-  message?: string;
-  error?: string;
-  files?: Array<{
-    filename?: string;
-    type?: string;
-    format?: string;
-    url?: string;
-    thumbnail_url?: string | null;
-  }>;
-};
-
 type SystemStatus = {
   status?: string;
   backend?: {
@@ -176,7 +160,7 @@ function App() {
   const [queuePosition, setQueuePosition] =
     useState<number | null>(null);
 
-  const [jobId, setJobId] =
+  const [, setJobId] =
     useState<string | null>(null);
 
   const [videoUrl, setVideoUrl] =
